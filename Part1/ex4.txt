@@ -1,0 +1,22 @@
+$ docker container ls
+CONTAINER ID        IMAGE                               COMMAND                  CREATED             STATUS              PORTS               NAMES
+ea9134ca8f65        devopsdockeruh/exec_bash_exercise   "node index"             7 minutes ago       Up 7 minutes                            youthful_ishizaka
+443cee4bc5b8        ubuntu:16.04                        "sh -c 'while true; …"   11 minutes ago      Up 11 minutes                           looper-it
+$ docker exec -it youthful_ishizaka bash
+root@ea9134ca8f65:/usr/app# tail -f ./logs.txt
+"Docker is easy"
+Sun, 10 May 2020 21:59:42 GMT
+Sun, 10 May 2020 21:59:45 GMT
+Sun, 10 May 2020 21:59:48 GMT
+Sun, 10 May 2020 21:59:51 GMT
+Secret message is:
+"Docker is easy"
+Sun, 10 May 2020 21:59:57 GMT
+Sun, 10 May 2020 22:00:00 GMT
+Sun, 10 May 2020 22:00:03 GMT
+Sun, 10 May 2020 22:00:06 GMT
+Secret message is:
+"Docker is easy"
+Sun, 10 May 2020 22:00:12 GMT
+^C
+
