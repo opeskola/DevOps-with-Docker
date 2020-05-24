@@ -1,0 +1,5 @@
+First, logs.txt file is created in host machine. Then the following commands are given
+
+$ docker pull devopsdockeruh/first_volume_exercise
+$ docker run -v $(pwd)/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise:latest
+
