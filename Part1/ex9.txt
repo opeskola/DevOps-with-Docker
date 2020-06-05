@@ -1,0 +1,8 @@
+Commands in terminal
+
+$ docker pull devopsdockeruh/ports_exercise
+$ docker run -p 1234:80 devopsdockeruh/ports_exercise:latest
+
+Command in web browser
+
+http://localhost:1234
