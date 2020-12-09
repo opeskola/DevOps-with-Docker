@@ -1,3 +1,3 @@
 # DevOps-with-Docker
 
-Mooc course https://devopswithdocker.com/
+This repository contains exercises done in MOOC course https://devopswithdocker.com/
