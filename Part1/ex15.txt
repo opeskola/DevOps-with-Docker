@@ -1,2 +1,2 @@
 Link for the project in Github: https://github.com/opeskola/HelloWorld
-Link for the project in Docker Hub: https://hub.docker.com/repository/docker/opeskola/hello_world_test 
+Link for the project in Docker Hub: https://hub.docker.com/r/opeskola/hello_world_test
