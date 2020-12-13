@@ -1,3 +1,7 @@
 # DevOps-with-Docker
 
-This repository contains exercises done in MOOC course https://devopswithdocker.com/
+This repository contains exercises that were done in MOOC course https://devopswithdocker.com/
+
+## Part 1
+All exercises done except 1.17
+ 
