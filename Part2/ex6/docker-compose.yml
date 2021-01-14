@@ -1,0 +1,35 @@
+version: '3.5'
+
+services:
+  backend:
+    image: backend:latest 
+    ports: 
+      - 8000:8000
+    environment:
+      - REDIS=redis
+      - REDIS_PORT=6379
+      - DB_USERNAME=user
+      - DB_PASSWORD=passwd
+      - DB_NAME=postgres
+      - DB_HOST=db
+    depends_on:
+      - db
+      - redis
+  frontend:
+    image: frontend:latest
+    ports:
+      - 5000:5000
+    environment:
+      - API_URL=http://localhost:8000
+  redis:
+    image: redis:latest
+    ports:
+      - 6379
+  db:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: passwd
+      POSTGRES_DB: postgres
+
