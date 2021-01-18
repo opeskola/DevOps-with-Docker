@@ -1,0 +1,17 @@
+Hei,
+
+palautan tämän tehtävän, vaikka se ei omalla koneellani toiminut täysin oikein. Kun ajaa komennon docker-compose up, niin tulee seuraava tuloste
+
+Creating network "27_default" with the default driver
+Creating volume "27_imgs" with default driver
+Creating volume "27_model" with default driver
+Creating kurkkumopo-training ... done
+Creating kurkkumopo-backend  ... done
+Creating kurkkumopo_frontend ... done
+Attaching to kurkkumopo-training, kurkkumopo_frontend, kurkkumopo-backend
+kurkkumopo_frontend | INFO: Accepting connections at http://localhost:3000
+kurkkumopo-backend exited with code 132
+kurkkumopo-training exited with code 132
+
+Kävimme Telegrammissa keskustelua aiheesta Sasu Mäkisen ja Jami Kousan kanssa. Keskustelun perusteella vaikutti siltä, että minun koneeni on sen verran vanha, että se aiheuttaa virheen.
+Sovimme, että voin palauttaa tehtävän tällaisenaan.
