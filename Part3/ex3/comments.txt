@@ -1,0 +1,1 @@
+In this exercise I modified those Dockerfiles that were used in previous devOps with Docker course as I completed course parts 1 and 2 earlier.
