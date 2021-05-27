@@ -1,17 +1,15 @@
-FROM ubuntu:16.04
+FROM golang:1.16
 
 WORKDIR /mydir
+ENV PORT=8080
+ENV REQUEST_ORIGIN=http://localhost:5000
+COPY . .
 
-RUN apt update && apt install -y curl
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash && apt install -y nodejs && npm install
+RUN go build
+RUN go test ./...
+RUN useradd -m appuser
 
-COPY . /mydir
+USER appuser
 
-RUN npm install
-ENV FRONT_URL=http://localhost:5000
-
-RUN useradd -m backuser
-
-USER backuser
-
-ENTRYPOINT npm start
+EXPOSE ${PORT}
+CMD ["./server"]
