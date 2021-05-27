@@ -10,9 +10,10 @@ COPY . /mydir
 RUN npm install
 ENV API_URL=http://localhost:8000
 
-RUN useradd -m frontuser
+RUN useradd -m appuser
+RUN chown appuser:appuser .
 
-USER frontuser
+USER appuser
 
 ENTRYPOINT npm start
 
