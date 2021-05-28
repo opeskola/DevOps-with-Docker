@@ -1,0 +1,10 @@
+For backend we already changed the image to more suitable in the previous exercise when trying to make the image smaller.
+In exercise 3.3 the backend image started like "FROM golang:1.16" and in exercise 3.4 we used "FROM golang:alpine". 
+The difference of the image sizes was 41 MB.
+
+For frontend the image size was earlier 439 MB. After changing the Dockerfile to start like "FROM alpine:3.10" and doing 
+necessary modifications for the application to work, the new size was 262 MB.
+
+The new dockerfiles are in frontend and backend folders.
+
+ 
