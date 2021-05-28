@@ -1,0 +1,12 @@
+Frontend
+
+Dockerfile size before 480 MB
+Dockerfile size after 439 MB
+Difference 41 MB
+
+
+Backend
+
+Dockerfile size before 1010 MB
+Dockerfile size after 447 MB
+Difference 563 MB
